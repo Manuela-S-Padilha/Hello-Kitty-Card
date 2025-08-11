@@ -4,4 +4,4 @@ An interactive **Hello Kitty** card where each click reveals a new outfit or pos
 # Hello-Kitty-Card (pt-br)
 Um cartão interativo da **Hello Kitty,** onde cada clique revela uma nova roupa ou pose da personagem. As imagens mudam com um suave efeito de transição fade e um leve movimento de escala, deixando a troca mais agradável. Além do clique no cartão, é possível selecionar diretamente uma pose através das miniaturas exibidas ao lado. O design segue uma paleta rosa suave com detalhes delicados, e foi desenvolvido usando **HTML, CSS e JavaScript** para criar uma experiência divertida e responsiva.
 
-hello-kitty-card.png
+<img width="1366" height="768" alt="hello-kitty-card-print" src="https://github.com/user-attachments/assets/0f12d961-25d8-411d-a5dc-bc39ec689a27" />
