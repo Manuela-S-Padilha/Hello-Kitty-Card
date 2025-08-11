@@ -1,0 +1,93 @@
+:root{
+  --bg: linear-gradient(135deg,#ffd6e8,#ffeedd 60%);
+  --card-bg: rgba(255,255,255,0.85);
+  --accent: #ff7fbf;
+  --shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,"Press Start 2P",sans-serif;background:var(--bg);}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  padding:40px;
+}
+
+/* cartão */
+.card{
+  width:340px;
+  background:var(--card-bg);
+  border-radius:20px;
+  padding:18px;
+  box-shadow:var(--shadow);
+  text-align:center;
+  cursor:pointer;
+  transition:transform .18s ease;
+  outline: none;
+}
+.card:active{ transform: translateY(4px) scale(.996); }
+.card-inner{
+  height:320px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-radius:14px;
+  background:linear-gradient(180deg,#fff7ff,#fff0fa);
+  position:relative;
+}
+
+/* imagem com crossfade */
+.kitty{
+  max-height:100%;
+  max-width:100%;
+  transition:opacity .35s ease, transform .35s ease;
+  display:block;
+  opacity:1;
+}
+
+/* título */
+.title{
+  margin:12px 0 4px;
+  font-size:14px;
+  color:#333;
+  letter-spacing:1px;
+}
+.subtitle{
+  margin:0;
+  font-size:11px;
+  color:#666;
+}
+
+/* miniaturas */
+.thumbnails{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+}
+.thumb-btn{
+  width:72px;
+  height:72px;
+  border-radius:8px;
+  overflow:hidden;
+  border:2px solid transparent;
+  padding:4px;
+  background:rgba(255,255,255,0.9);
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  cursor:pointer;
+  transition:transform .12s ease, border-color .12s ease;
+}
+.thumb-btn img{ width:100%; height:100%; object-fit:cover; display:block; }
+.thumb-btn:hover{ transform:translateY(-4px); border-color:var(--accent); }
+.thumb-btn.active{ border-color:var(--accent); transform:scale(1.03); }
+
+/* responsivo */
+@media (max-width:720px){
+  .page{flex-direction:column;}
+  .thumbnails{flex-direction:row;}
+}

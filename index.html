@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartão Interativo Hello Kitty</title>
+
+  <!-- Fonte pixel opcional -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" id="card" tabindex="0" aria-label="Cartão interativo Hello Kitty. Clique para trocar a pose.">
+      <div class="card-inner">
+        <img src="hello-kitty-1.png" alt="Hello Kitty" id="kitty" class="kitty" />
+      </div>
+      <h2 class="title">Hello Kitty</h2>
+      <p class="subtitle">Clique na imagem para trocar a roupa ✨</p>
+    </section>
+
+    <aside class="thumbnails" id="thumbs" aria-hidden="false">
+      <!-- Miniaturas geradas por JS -->
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
